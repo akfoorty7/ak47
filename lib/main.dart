@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( Manisha());
+  runApp( AK47());
 }
 
-class Manisha extends StatelessWidget {
-  const Manisha ({super.key});
+class AK47 extends StatelessWidget {
+  const AK47 ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,30 +21,37 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
-      appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text('9:27'),
-      ),
-      body:Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-        Container(
-          height: ,
-          width: 100,
-          color: Colors.red,
-        ),
-          Container(
-            height: 100,
-            width: 100,
-            color: Colors.yellow,
+      body: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                height: 700,
+                width: 100,
+                color: Colors.red,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+              Container(
+                height: 700,
+                width: 100,
+                color: Colors.blue,
+              ),
+            ],
           ),
-
-          Container(
-            height: 700,
-            width: 100,
-            color: Colors.blue,
-          ),
-        ],
       ),
     );
   }
